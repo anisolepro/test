@@ -1,0 +1,75 @@
+.mainCmsProjectPage {
+    display: grid;
+    height: 100svh;
+    box-sizing: border-box;
+
+    padding-top: 50px;
+    /* background-color: red; */
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+.pageSection,
+.contentSection,
+.editSection {
+    border-right: 2px solid gray;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+
+
+    >h1 {
+        /* padding: 10px; */
+        justify-content: space-evenly;
+        background-color: var(--theme-color);
+        color: #fff;
+
+        border-radius: 0px 0px 20px 20px;
+        text-align: center;
+
+
+        >button {
+            background-color: transparent;
+            border: none;
+            font-size: 1em;
+            color: inherit;
+        }
+
+        >button:hover {
+            scale: 0.95;
+        }
+    }
+}
+
+.pageSection {
+    display: grid;
+    grid-template-rows: 50px auto;
+
+
+}
+
+.pageSection>.pageList {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding-top: 10px;
+    box-sizing: border-box;
+
+    overflow-y: scroll;
+
+
+}
+
+
+.pageSection>.pageList>button {
+    font-size: 2em;
+    border-radius: 10px;
+    border: none;
+}
+
+.pageSection>.pageList>button:hover {
+    scale: 0.95;
+
+}
