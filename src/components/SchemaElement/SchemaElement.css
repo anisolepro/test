@@ -1,0 +1,22 @@
+.SchemaElement {
+    width: 90%;
+    /* justify-content: center; */
+    display: grid;
+
+    margin: 10px auto;
+    margin-bottom: 50px;
+    gap: 1em;
+
+
+    >input {
+        background-color: #333;
+        border: none;
+        width: 100%;
+        font-size: 1.4em;
+        border-radius: 5px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        color: #ccc;
+    }
+
+}

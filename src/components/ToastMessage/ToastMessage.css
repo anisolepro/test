@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+:root {
+    --barHeight: 0px
+}
+
+.ToastMessage {
+    display: flex;
+    position: fixed;
+    bottom: 2em;
+    left: 0;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+
+    max-width: 40vw;
+}
+
+.ToastMessage>.message {
+    overflow: hidden;
+    width: 250px;
+    /* gap: 5px; */
+    display: grid;
+    grid-template-rows: auto var(--barHeight);
+    word-wrap: break-word;
+    word-break: break-all;
+    background-color: var(--back-color, #ccc);
+
+
+    color: var(--color, #000);
+    border: none;
+    border-radius: 7px;
+
+    font-size: 1.2em;
+
+
+    font-family: 'Roboto', sans-serif;
+    left: -200%;
+    position: relative;
+}
+
+.ToastMessage>.startAnimation {
+    left: 0%;
+    animation: inAnimate 0.3s ease-in-out;
+}
+
+
+.ToastMessage .contentDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+@keyframes inAnimate {
+    0% {
+        left: -200%;
+    }
+
+    50% {
+        left: 15%;
+    }
+
+    100% {
+        left: 0%;
+    }
+
+}

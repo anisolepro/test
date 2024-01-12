@@ -1,0 +1,126 @@
+.showModelDiv {
+    top: 100px !important;
+}
+
+.createContentModelDiv {
+    position: fixed;
+    left: 50%;
+    top: -100%;
+
+    transform: translate(-50%, 0%);
+
+
+    /* background-color: #333; */
+    /* box-shadow: 0px 0px 10px 10px #000; */
+    padding: 10px;
+    min-width: 400px;
+    width: 50%;
+    min-height: 600px;
+
+
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    display: grid;
+    grid-template-rows: 50px auto;
+
+    >h1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+
+        >button {
+
+            background-color: transparent;
+            border: none;
+            font-size: 1em;
+            color: #fff;
+        }
+    }
+
+}
+
+
+.createContentModelDiv>.InputSection {
+    display: grid;
+    grid-template-rows: 5em auto 2em;
+    gap: 1em;
+
+    padding-top: 20px;
+
+    >label {
+        display: grid;
+        /* gap: 1em; */
+        grid-template-rows: 2em auto;
+
+
+    }
+}
+
+.createContentModelDiv>.InputSection .ContentSchema {
+    display: grid;
+
+    grid-template-rows: auto 50px;
+    height: 100%;
+
+}
+
+.contentSchemaListDiv {
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    >.SchemaElement {
+        display: grid;
+        grid-template-columns: auto 100px 50px;
+
+
+    }
+}
+
+
+.contentSchemaListDiv>.SchemaElement {
+    height: 3em;
+
+    background-color: #333;
+    overflow: hidden;
+    border-radius: 5px;
+
+    >input,
+    >select,
+    >button {
+        width: 100%;
+        outline: none;
+        background-color: transparent;
+        border: none;
+        color: #ccc;
+        font-size: 1.2em;
+        padding: 0px 10px;
+    }
+
+    >select>option {
+        background-color: #333;
+    }
+
+    >button {
+        color: red;
+    }
+}
+
+
+.contentAddBtn {
+    background-color: #333;
+    color: #ccc;
+    border: none;
+    padding: 10px;
+    font-size: 1.4em;
+    border-radius: 5px;
+    text-align: center;
+}
